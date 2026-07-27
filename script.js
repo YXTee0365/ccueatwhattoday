@@ -1,6 +1,3 @@
-//==============================
-// Google Apps Script API
-//==============================
 
 const API =
 "https://script.google.com/macros/s/AKfycbw3sfc4u0lmCYjY1rOhk1Vnrg6R0Uo_OfCuVJG2HBsctKYvyK_EeYgKIQJQaXFqyvGCJQ/exec";
@@ -8,9 +5,6 @@ const API =
 let shops = [];
 let currentMeal = "";
 
-//==============================
-// 判斷目前餐別
-//==============================
 
 function getMeal() {
 
@@ -28,9 +22,6 @@ function getMeal() {
     return "宵夜";
 }
 
-//==============================
-// 更新時間
-//==============================
 
 function updateTime() {
 
@@ -41,9 +32,6 @@ function updateTime() {
 
 }
 
-//==============================
-// 載入Google Sheet
-//==============================
 
 async function loadData() {
 
@@ -64,10 +52,6 @@ async function loadData() {
     }
 
 }
-
-//==============================
-// 隨機抽店家
-//==============================
 
 function randomShop() {
 
@@ -114,19 +98,12 @@ function randomShop() {
 
 }
 
-//==============================
-// 初始化
-//==============================
-
 currentMeal = getMeal();
 
 updateTime();
 
 setInterval(updateTime, 1000);
 
-//==============================
-// 餐別按鈕
-//==============================
 
 document.querySelectorAll(".meal-btn").forEach(btn => {
 
@@ -149,14 +126,8 @@ document.querySelectorAll(".meal-btn").forEach(btn => {
 
 });
 
-//==============================
-// 再抽一次
-//==============================
 
 document.getElementById("randomBtn").onclick = randomShop;
 
-//==============================
-// 開始
-//==============================
 
 loadData();
