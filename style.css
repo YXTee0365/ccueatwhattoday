@@ -1,0 +1,120 @@
+body{
+
+    font-family: "Microsoft JhengHei", sans-serif;
+
+    background:#f5f7fb;
+
+    margin:0;
+
+}
+
+.container{
+
+    max-width:600px;
+
+    margin:40px auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 15px rgba(0,0,0,.1);
+
+}
+
+h1{
+
+    text-align:center;
+
+}
+
+.meal-buttons{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:25px 0;
+
+}
+
+.meal-btn{
+
+    flex:1;
+
+    margin:5px;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:#e5e7eb;
+
+}
+
+.meal-btn.active{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.card{
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    padding:20px;
+
+    margin:25px 0;
+
+}
+
+#randomBtn{
+
+    width:100%;
+
+    padding:15px;
+
+    font-size:18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+footer{
+
+    margin-top:40px;
+
+    padding:20px;
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+footer p{
+
+    margin:6px 0;
+
+}
